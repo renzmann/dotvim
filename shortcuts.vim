@@ -180,5 +180,7 @@ nnoremap <silent><nowait> <Leader>cp  :<C-u>CocListResume<CR>
 
 " Clip[b]oard commands
 " -----------------------------------------------------------------------
+nnoremap <Leader>bv                   "+p
 vnoremap <Leader>bv                   "+p
 vnoremap <Leader>bc                   "+y
+
