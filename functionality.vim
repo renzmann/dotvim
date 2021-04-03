@@ -14,3 +14,5 @@ let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
 " Don't use the Julia latex completion on TAB
 let g:latex_to_unicode_tab = 0
 
+" Remove maximum file limit on CtrlP
+let g:ctrlp_max_files = 0
