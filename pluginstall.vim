@@ -31,7 +31,6 @@ Plug 'PProvost/vim-ps1'
 Plug 'dhruvasagar/vim-table-mode'
 " Completion engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovim/nvim-lspconfig'
 " Scala plugins
 " Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 " Python plugins
