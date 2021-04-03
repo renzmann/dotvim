@@ -136,49 +136,49 @@ nnoremap <silent> <expr> <Leader>fn g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" 
 " nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " " Remap keys for gotos
-" nmap <silent> gd <Plug>(coc-definition)
-" nmap <silent> gy <Plug>(coc-type-definition)
-" nmap <silent> gi <Plug>(coc-implementation)
-" nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " " Remap for rename current word
-" nmap <Leader>rn <Plug>(coc-rename)
+nmap <Leader>rn <Plug>(coc-rename)
 
 " " Used to expand decorations in worksheets
 " nmap <Leader>ws <Plug>(coc-metals-expand-decoration)
 
 " " Trigger for code actions
 " " Make sure `"codeLens.enable": rue` is set in coc config
-" nnoremap <Leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
+nnoremap <Leader>cl :<C-u>call CocActionAsync('codeLensAction')<CR>
 
 " " [a]pplying codeAction to the selected region.
 " " Example: `<Leader>aap` for current paragraph
-" xmap <Leader>a  <Plug>(coc-codeaction-selected)
-" nmap <Leader>a  <Plug>(coc-codeaction-selected)
+xmap <Leader>a  <Plug>(coc-codeaction-selected)
+nmap <Leader>a  <Plug>(coc-codeaction-selected)
 " " Remap keys for applying codeAction to the current buffer.
-" nmap <Leader>ac  <Plug>(coc-codeaction)
+nmap <Leader>ac  <Plug>(coc-codeaction)
 " " Apply AutoFix to problem on the current line.
-" nmap <Leader>qf  <Plug>(coc-fix-current)
+nmap <Leader>qf  <Plug>(coc-fix-current)
 
 " " Mappings for CoCList
 " " Show all diagnostics.
-" nnoremap <silent><nowait> <Leader>ca  :<C-u>CocList diagnostics<cr>
+nnoremap <silent><nowait> <Leader>ca  :<C-u>CocList diagnostics<cr>
 " " Manage extensions.
-" nnoremap <silent><nowait> <Leader>ce  :<C-u>CocList extensions<cr>
+nnoremap <silent><nowait> <Leader>ce  :<C-u>CocList extensions<cr>
 " " Show commands.
-" nnoremap <silent><nowait> <Leader>cc  :<C-u>CocList commands<cr>
+nnoremap <silent><nowait> <Leader>cc  :<C-u>CocList commands<cr>
 " " Find symbol of current document.
-" nnoremap <silent><nowait> <Leader>co  :<C-u>CocList outline<cr>
+nnoremap <silent><nowait> <Leader>co  :<C-u>CocList outline<cr>
 " " Search workLeader symbols.
-" nnoremap <silent><nowait> <Leader>cs  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> <Leader>cs  :<C-u>CocList -I symbols<cr>
 " " Do default action for next item.
-" nnoremap <silent><nowait> <Leader>cj  :<C-u>CocNext<CR>
+nnoremap <silent><nowait> <Leader>cj  :<C-u>CocNext<CR>
 " " Do default action for previous item.
-" nnoremap <silent><nowait> <Leader>ck  :<C-u>CocPrev<CR>
+nnoremap <silent><nowait> <Leader>ck  :<C-u>CocPrev<CR>
 " " Resume latest coc list.
-" nnoremap <silent><nowait> <Leader>cp  :<C-u>CocListResume<CR>
+nnoremap <silent><nowait> <Leader>cp  :<C-u>CocListResume<CR>
 
 " Clip[b]oard commands
 " -----------------------------------------------------------------------
-nnoremap <Leader>bv                   "+p
-nnoremap <Leader>bc                   "+y
+vnoremap <Leader>bv                   "+p
+vnoremap <Leader>bc                   "+y
