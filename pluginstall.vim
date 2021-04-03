@@ -10,3 +10,35 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
+call plug#begin(vimdir."/plugged")
+Plug 'cocopon/iceberg.vim'
+Plug 'preservim/nerdtree' |
+  \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+  \ Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdtree-project-plugin'
+Plug 'PhilRunninger/nerdtree-visual-selection'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'reedes/vim-pencil'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tmsvg/pear-tree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'bkad/CamelCaseMotion'
+Plug 'jpalardy/vim-slime'
+Plug 'PProvost/vim-ps1'
+Plug 'dhruvasagar/vim-table-mode'
+" Completion engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
+" Scala plugins
+" Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+" Python plugins
+Plug 'fannheyward/coc-pyright'
+" Julia plugins
+Plug 'JuliaEditorSupport/julia-vim'
+" Plug 'machakann/vim-lsp-julia'
+" Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+call plug#end()
+
