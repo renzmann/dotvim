@@ -83,6 +83,7 @@ nnoremap <Leader>po           :<C-u>PencilOff<CR>
 nnoremap <Leader>si           :<C-u>tabe $MYVIMRC<CR>
 nnoremap <Leader>sk           :<C-u>exe "tabe ".vimdir."/shortcuts.vim"<CR>
 nnoremap <Leader>sc           :<C-u>exe "tabe ".vimdir."/coc.vim"<CR>
+nnoremap <Leader>sp           :<C-u>exe "tabe ".vimdir."/pluginstall.vim"<CR>
 nnoremap <Leader>sl           :<C-u>source $MYVIMRC<CR>
 
 " [g]it commands
