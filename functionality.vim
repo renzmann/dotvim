@@ -16,3 +16,9 @@ let g:latex_to_unicode_tab = 0
 
 " Remove maximum file limit on CtrlP
 let g:ctrlp_max_files = 0
+
+" Ignore some folder patterns with ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git$\|venv$'
+
+" But don't ignore all hidden folders/files
+let g:ctrlp_show_hidden = 1

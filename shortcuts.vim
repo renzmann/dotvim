@@ -179,6 +179,21 @@ nnoremap <silent><nowait> <Leader>ck  :<C-u>CocPrev<CR>
 " " Resume latest coc list.
 nnoremap <silent><nowait> <Leader>cp  :<C-u>CocListResume<CR>
 
+nnoremap <silent><nowait> <Leader>cl  <Plug>(coc-range-select)
+
+vmap <Leader>cf  <Plug>(coc-format-selected)
+nmap <Leader>cf  <Plug>(coc-format-selected)
+
+" Select things more easily
+xmap if                               <Plug>(coc-funcobj-i)
+omap if                               <Plug>(coc-funcobj-i)
+xmap af                               <Plug>(coc-funcobj-a)
+omap af                               <Plug>(coc-funcobj-a)
+xmap ic                               <Plug>(coc-classobj-i)
+omap ic                               <Plug>(coc-classobj-i)
+xmap ac                               <Plug>(coc-classobj-a)
+omap ac                               <Plug>(coc-classobj-a)
+
 " Clip[b]oard commands
 " -----------------------------------------------------------------------
 nnoremap <Leader>bv                   "+p

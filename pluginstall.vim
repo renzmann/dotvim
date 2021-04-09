@@ -29,13 +29,14 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'jpalardy/vim-slime'
 Plug 'PProvost/vim-ps1'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'SkyLeach/pudb.vim'
+Plug 'vim-test/vim-test'
 " Completion engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Scala plugins
 " Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
 " Python plugins
 Plug 'fannheyward/coc-pyright'
+Plug 'psf/black', { 'branch': 'stable' }
 " Julia plugins
 Plug 'JuliaEditorSupport/julia-vim'
 " Plug 'machakann/vim-lsp-julia'
