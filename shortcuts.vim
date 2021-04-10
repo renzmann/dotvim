@@ -88,7 +88,7 @@ nnoremap <Leader>sl           :<C-u>source $MYVIMRC<CR>
 
 " [g]it commands
 " -----------------------------------------------------------------------
-nnoremap <Leader>gk           :<C-u>Gstatus<CR>
+nnoremap <Leader>gk           :<C-u>tab Git<CR>
 nnoremap <Leader>g<S-k>       :<C-u>Git push<CR>
 nnoremap <Leader>gf           :<C-u>Git fetch<CR>
 nnoremap <Leader>gF           :<C-u>Git pull<CR>
