@@ -210,3 +210,13 @@ omap ac                                <Plug>(coc-classobj-a)
 nnoremap <Leader>bv                   "+p
 vnoremap <Leader>bv                   "+p
 vnoremap <Leader>bc                   "+y
+
+" [i]python slime commands
+nnoremap <silent><C-j>                :<C-u>IPythonCellNextCell<CR>
+nnoremap <silent><C-k>                :<C-u>IPythonCellPrevCell<CR>
+vnoremap <silent><C-j>                :<C-u>IPythonCellNextCell<CR>
+vnoremap <silent><C-k>                :<C-u>IPythonCellPrevCell<CR>
+nnoremap <silent><Leader>i<Enter>     :<C-u>IPythonCellExecuteCell<CR>
+nnoremap <silent><Leader>i<S-Enter>   :<C-u>IPythonCellExecuteCellJump<CR>
+nnoremap <silent><Leader>il           :<C-u>IPythonCellClear<CR>
+nnoremap <silent><Leader>ix           :<C-u>IPythonCellClose<CR>

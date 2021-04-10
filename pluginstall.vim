@@ -37,6 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Python plugins
 Plug 'fannheyward/coc-pyright'
 Plug 'psf/black', { 'branch': 'stable' }
+Plug 'hanschen/vim-ipython-cell'
 " Julia plugins
 Plug 'JuliaEditorSupport/julia-vim'
 " Plug 'machakann/vim-lsp-julia'
