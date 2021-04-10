@@ -40,6 +40,5 @@ Plug 'psf/black', { 'branch': 'stable' }
 " Julia plugins
 Plug 'JuliaEditorSupport/julia-vim'
 " Plug 'machakann/vim-lsp-julia'
-" Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
 call plug#end()
 
