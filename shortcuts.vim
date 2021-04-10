@@ -3,8 +3,8 @@
 " =============================================================================
 
 " Faster scrolling
-nnoremap <C-E> 2<C-E>
-nnoremap <C-Y> 2<C-Y>
+nnoremap <C-e>                2<C-E>
+nnoremap <C-y>                2<C-Y>
 
 " Don't remember where this came from
 set backspace=indent,eol,start
