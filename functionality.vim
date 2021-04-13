@@ -22,3 +22,8 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git$\|venv$'
 
 " But don't ignore all hidden folders/files
 let g:ctrlp_show_hidden = 1
+
+" Use vimux for testing
+let g:test#neovim#term_position = "vert botright"
+let g:test#strategy = "vimux"
+let g:test#python#runner = "pyunit"
