@@ -73,6 +73,7 @@ onoremap ih                   :<C-U>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_
 nnoremap \                    za
 vnoremap \                    zf
 
+
 " =======================================================================
 "                       LEADER LAYERS
 " =======================================================================
@@ -99,6 +100,16 @@ nnoremap <silent><Leader>g<S-k>       :<C-u>Git push<CR>
 nnoremap <silent><Leader>gf           :<C-u>Git fetch<CR>
 nnoremap <silent><Leader>gF           :<C-u>Git pull<CR>
 nnoremap <silent><Leader>gd           :<C-u>Gvdiffsplit<CR>
+
+" Search f[o]r stuff
+" -----------------------------------------------------------------------
+function SearchHere()
+  let pattern = input("Search pattern: ")
+  exe "vimgrep /" . pattern . "/j */*"
+  exe "cw"
+endfunction
+
+nnoremap <silent><Leader>o            :call SearchHere()<CR>
 
 " Tab Movement
 " -----------------------------------------------------------------------
@@ -129,6 +140,9 @@ nnoremap <silent><Leader>ft           :<C-u>NERDTree<CR>
 nnoremap <silent><expr><Leader>fn     g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>" : bufexists(expand('%')) ? "\:NERDTreeFind<CR>" : "\:NERDTree<CR>"
 
 
+" Conqueror of Completion (CoC) Commands
+" -----------------------------------------------------------------------
+
 " Old CoC Metals stuff in case we want it back some day
 " Toggle panel with Tree Views
 " nnoremap <silent> <Leader>fm  :<C-u>CocCommand metals.tvp<CR>
@@ -141,8 +155,6 @@ nnoremap <silent><expr><Leader>fn     g:NERDTree.IsOpen() ? "\:NERDTreeClose<CR>
 " " Reveal current current class (trait or object) in Tree View 'metalsPackages'
 " nnoremap <silent> <Leader>ff  :<C-u>CocCommand metals.revealInTreeView metalsPackages<CR>t
 
-" Conqueror of Completion (CoC) Commands
-" -----------------------------------------------------------------------
 " Use `[g` and `]g` to navigate diagnostics
 nmap <silent> [g                       <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g                       <Plug>(coc-diagnostic-next)
@@ -212,6 +224,7 @@ vnoremap <Leader>bv                   "+p
 vnoremap <Leader>bc                   "+y
 
 " [i]python slime commands
+" -----------------------------------------------------------------------
 nnoremap <silent><C-j>                :<C-u>IPythonCellNextCell<CR>
 nnoremap <silent><C-k>                :<C-u>IPythonCellPrevCell<CR>
 vnoremap <silent><C-j>                :<C-u>IPythonCellNextCell<CR>
