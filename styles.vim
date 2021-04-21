@@ -49,3 +49,10 @@ augroup yaml
     \ autoindent fileformat=unix nohlsearch
 augroup END
 
+" MakeFile
+" --------
+augroup make
+  autocmd!
+  autocmd FileType make setlocal noexpandtab
+augroup END
+
