@@ -31,6 +31,9 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
+" Use tab to select highlighted option
+inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<C-g>u\<TAB>"
+
 " Used in the tab autocompletion for coc
 function! s:check_back_space() abort
   let col = col('.') - 1
