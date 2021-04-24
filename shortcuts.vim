@@ -105,11 +105,32 @@ nnoremap <silent><Leader>gd           :<C-u>Gvdiffsplit<CR>
 " -----------------------------------------------------------------------
 function SearchHere()
   let pattern = input("Search pattern: ")
-  exe "vimgrep /" . pattern . "/j */*"
-  exe "cw"
+  exe "Ack! " . pattern
 endfunction
 
-nnoremap <silent><Leader>o            :call SearchHere()<CR>
+function SearchSomewhere()
+  let pattern = input("Search pattern: ")
+  let directory = input("Search directory: ")
+  exe "Ack! " . pattern . " " . directory
+endfunction
+
+function SearchWithOptions()
+  let pattern = input("Search pattern: ")
+  let options = input("Search options: ")
+  exe "Ack! -" . options . " " . pattern
+endfunction
+
+function SearchSomewhereWithOptions()
+  let pattern = input("Search pattern: ")
+  let directory = input("Search directory: ")
+  let options = input("Search options: ")
+  exe "Ack! -" . options . " " . pattern . " " . directory
+endfunction
+
+nnoremap <silent><Leader>o            :<C-u>call SearchHere()<CR>
+nnoremap <silent><Leader><S-o>        :<C-u>call SearchSomewhere()<CR>
+nnoremap <silent><Leader><C-o>        :<C-u>call SearchWithOptions()<CR>
+nnoremap <silent><Leader><C-S-o>      :<C-u>call SearchSomewhereWithOptions()<CR>
 
 " Tab Movement
 " -----------------------------------------------------------------------

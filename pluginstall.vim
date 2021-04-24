@@ -11,36 +11,50 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin(vimdir."/plugged")
-Plug 'cocopon/iceberg.vim'
+
+" NerdTree
 Plug 'preservim/nerdtree' |
   \ Plug 'Xuyuanp/nerdtree-git-plugin' |
   \ Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'PhilRunninger/nerdtree-visual-selection'
+
+" Search features
+Plug 'tmsvg/pear-tree'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
+
+" Slime/tmux
+Plug 'bkad/CamelCaseMotion'
+Plug 'jpalardy/vim-slime'
+
+" Completion engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Scala plugins
+" Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
+
+" Python plugins
+Plug 'fannheyward/coc-pyright'
+Plug 'psf/black', { 'branch': 'stable' }
+Plug 'hanschen/vim-ipython-cell'
+
+" Julia plugins
+Plug 'JuliaEditorSupport/julia-vim'
+" Plug 'machakann/vim-lsp-julia'
+
+" Other misc.
+Plug 'cocopon/iceberg.vim'
+Plug 'preservim/vimux'
+Plug 'PProvost/vim-ps1'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'vim-test/vim-test'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'tmsvg/pear-tree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'bkad/CamelCaseMotion'
-Plug 'jpalardy/vim-slime'
-Plug 'preservim/vimux'
-Plug 'PProvost/vim-ps1'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'vim-test/vim-test'
-" Completion engine
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Scala plugins
-" Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
-" Python plugins
-Plug 'fannheyward/coc-pyright'
-Plug 'psf/black', { 'branch': 'stable' }
-Plug 'hanschen/vim-ipython-cell'
-" Julia plugins
-Plug 'JuliaEditorSupport/julia-vim'
-" Plug 'machakann/vim-lsp-julia'
+
 call plug#end()
 
