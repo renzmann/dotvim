@@ -254,3 +254,8 @@ nnoremap <silent><Leader>ie           :<C-u>IPythonCellExecuteCell<CR>
 nnoremap <silent><Leader><Leader>     :<C-u>IPythonCellExecuteCellJump<CR>
 nnoremap <silent><Leader>il           :<C-u>IPythonCellClear<CR>
 nnoremap <silent><Leader>ix           :<C-u>IPythonCellClose<CR>
+
+" e[x]tra things
+" -----------------------------------------------------------------------
+nnoremap <silent><Leader>xh           :<C-u>set invhlsearch<CR>
+
