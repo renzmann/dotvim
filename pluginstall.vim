@@ -28,9 +28,8 @@ Plug 'bkad/CamelCaseMotion'
 Plug 'jpalardy/vim-slime'
 
 " Completion engine
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " TODO migrate to builtin LSP. Follow the siduck76 guide for this
-" Plug 'machakann/vim-lsp-julia'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Scala plugins
 " Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
@@ -42,9 +41,11 @@ Plug 'hanschen/vim-ipython-cell'
 
 " Julia plugins
 Plug 'JuliaEditorSupport/julia-vim'
+" Plug 'machakann/vim-lsp-julia'
 
 " Status line
 " TODO check out galaxyline as a faster alternative
+" Plug 'glepnir/galaxyline.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
