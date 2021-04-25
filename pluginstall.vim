@@ -20,9 +20,8 @@ Plug 'scrooloose/nerdtree-project-plugin'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 
 " Search features
-Plug 'tmsvg/pear-tree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'mileszs/ack.vim'
+Plug '~/.fzf'
+Plug 'junegunn/fzf.vim'
 
 " Slime/tmux
 Plug 'bkad/CamelCaseMotion'
@@ -30,6 +29,8 @@ Plug 'jpalardy/vim-slime'
 
 " Completion engine
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" TODO migrate to builtin LSP. Follow the siduck76 guide for this
+" Plug 'machakann/vim-lsp-julia'
 
 " Scala plugins
 " Plug 'scalameta/coc-metals', {'do': 'yarn install --frozen-lockfile'}
@@ -41,16 +42,19 @@ Plug 'hanschen/vim-ipython-cell'
 
 " Julia plugins
 Plug 'JuliaEditorSupport/julia-vim'
-" Plug 'machakann/vim-lsp-julia'
+
+" Status line
+" TODO check out galaxyline as a faster alternative
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Other misc.
 Plug 'cocopon/iceberg.vim'
+Plug 'tmsvg/pear-tree'
 Plug 'preservim/vimux'
 Plug 'PProvost/vim-ps1'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'vim-test/vim-test'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'

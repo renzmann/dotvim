@@ -103,34 +103,12 @@ nnoremap <silent><Leader>gd           :<C-u>Gvdiffsplit<CR>
 
 " Search f[o]r stuff
 " -----------------------------------------------------------------------
-function SearchHere()
-  let pattern = input("Search pattern: ")
-  exe "Ack! " . pattern
-endfunction
-
-function SearchSomewhere()
-  let pattern = input("Search pattern: ")
-  let directory = input("Search directory: ")
-  exe "Ack! " . pattern . " " . directory
-endfunction
-
-function SearchWithOptions()
-  let pattern = input("Search pattern: ")
-  let options = input("Search options: ")
-  exe "Ack! -" . options . " " . pattern
-endfunction
-
-function SearchSomewhereWithOptions()
-  let pattern = input("Search pattern: ")
-  let directory = input("Search directory: ")
-  let options = input("Search options: ")
-  exe "Ack! -" . options . " " . pattern . " " . directory
-endfunction
-
-nnoremap <silent><Leader>o            :<C-u>call SearchHere()<CR>
-nnoremap <silent><Leader><S-o>        :<C-u>call SearchSomewhere()<CR>
-nnoremap <silent><Leader><C-o>        :<C-u>call SearchWithOptions()<CR>
-nnoremap <silent><Leader><C-S-o>      :<C-u>call SearchSomewhereWithOptions()<CR>
+nnoremap <silent><Leader>of           :<C-u>Files<CR>
+nnoremap <silent><Leader>oo           :<C-u>Rg<CR>
+nnoremap <silent><Leader>ob           :<C-u>Buffers<CR>
+nnoremap <silent><Leader>oh           :<C-u>History<CR>
+nnoremap <silent><Leader>ol           :<C-u>Helptags<CR>
+nnoremap <silent><Leader>oc           :<C-u>Commits<CR>
 
 " Tab Movement
 " -----------------------------------------------------------------------
