@@ -103,13 +103,12 @@ nnoremap <silent><Leader>gd           :<C-u>Gvdiffsplit<CR>
 
 " Search f[o]r stuff
 " -----------------------------------------------------------------------
-function SearchHere()
-  let pattern = input("Search pattern: ")
-  exe "vimgrep /" . pattern . "/j */*"
-  exe "cw"
-endfunction
-
-nnoremap <silent><Leader>o            :call SearchHere()<CR>
+nnoremap <silent><Leader>of           :<C-u>Files<CR>
+nnoremap <silent><Leader>oo           :<C-u>Rg<CR>
+nnoremap <silent><Leader>ob           :<C-u>Buffers<CR>
+nnoremap <silent><Leader>oh           :<C-u>History<CR>
+nnoremap <silent><Leader>ol           :<C-u>Helptags<CR>
+nnoremap <silent><Leader>oc           :<C-u>Commits<CR>
 
 " Tab Movement
 " -----------------------------------------------------------------------
@@ -233,3 +232,8 @@ nnoremap <silent><Leader>ie           :<C-u>IPythonCellExecuteCell<CR>
 nnoremap <silent><Leader><Leader>     :<C-u>IPythonCellExecuteCellJump<CR>
 nnoremap <silent><Leader>il           :<C-u>IPythonCellClear<CR>
 nnoremap <silent><Leader>ix           :<C-u>IPythonCellClose<CR>
+
+" e[x]tra things
+" -----------------------------------------------------------------------
+nnoremap <silent><Leader>xh           :<C-u>set invhlsearch<CR>
+
