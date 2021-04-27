@@ -27,3 +27,6 @@ let g:ctrlp_show_hidden = 1
 let g:test#neovim#term_position = "vert botright"
 let g:test#strategy = "vimux"
 let g:test#python#runner = "pyunit"
+
+" Don't fold markdown by default
+let g:vim_markdown_folding_disabled = 1

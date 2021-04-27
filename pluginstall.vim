@@ -49,6 +49,9 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+" SQL plugins
+Plug 'jsborjesson/vim-uppercase-sql'
+
 " Other misc.
 Plug 'cocopon/iceberg.vim'
 Plug 'tmsvg/pear-tree'
@@ -60,6 +63,8 @@ Plug 'reedes/vim-pencil'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'plasticboy/vim-markdown'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
