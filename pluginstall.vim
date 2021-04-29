@@ -65,6 +65,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'plasticboy/vim-markdown'
 Plug 'sheerun/vim-polyglot'
+Plug 'jsborjesson/vim-uppercase-sql'
 
 call plug#end()
 
