@@ -9,6 +9,7 @@ augroup pep8
   autocmd BufWritePre * %s/\s\+$//e  " Delete trailing whitespace on save
   autocmd FileType * setlocal foldenable foldmethod=manual tabstop=4
     \ softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent
+    \ list listchars=tab:>-,trail:·
 augroup END
 
 " Json
