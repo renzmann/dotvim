@@ -24,10 +24,6 @@ imap kj                       <Esc>
 omap kj                       <Esc>
 
 " Getting around
-nnoremap <left>               <C-w>h
-nnoremap <right>              <C-w>l
-nnoremap <up>                 <C-w>k
-nnoremap <down>               <C-w>j
 nnoremap <S-ScrollWheelUp>    <ScrollWheelLeft>
 nnoremap <S-ScrollWheelDown>  <ScrollWheelRight>
 map <S-Down>                  ]mzz
