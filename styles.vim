@@ -16,11 +16,11 @@ augroup END
 " ----
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-" Scala
-" -----
-augroup scala_lang
+" Scala/SQL
+" ---------
+augroup wide_twospace
   autocmd!
-  autocmd FileType scala setlocal
+  autocmd FileType scala,sql setlocal
     \ tabstop=2 softtabstop=2 shiftwidth=2 textwidth=120
 augroup END
 
