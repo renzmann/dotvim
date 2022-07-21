@@ -1,0 +1,15 @@
+[submodule "pack/arcticicestudio/start/nord-vim"]
+	path = pack/arcticicestudio/start/nord-vim
+	url = https://github.com/arcticicestudio/nord-vim
+[submodule "pack/tpope/start/vim-commentary"]
+	path = pack/tpope/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "pack/tpope/start/vim-fugitive"]
+	path = pack/tpope/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/tpope/start/vim-sensible"]
+	path = pack/tpope/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule "pack/tpope/start/vim-surround"]
+	path = pack/tpope/start/vim-surround
+	url = https://github.com/tpope/vim-surround
